@@ -1,0 +1,62 @@
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pelicula {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .pelicula img {
+    width: 80px;
+    height: auto;
+    max-width: 100px;
+  }
+
+  .pelicula div {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  .pelicula small {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 430px) {
+  .pelicula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pelicula img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .pelicula div,
+  .pelicula small {
+    text-align: center;
+    padding-left: 0;
+  }
+  .embed-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
